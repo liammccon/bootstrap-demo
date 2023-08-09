@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!--Div store all of the cards. Adds "3" of margin to left and right-->
+    <div class="container-fluid ms-3 me-3">
+        <h1 class="mt-3">Pokemon Cards</h1>
+        <!--Main Row - will be default row on small screens and will be wrapped row on larger screens-->
+        <div class="row row-cols-sm-auto">
+            <!--Column 1-->
+            <div class="col">
+                <!-- Card 1 -->
+                <div class="card bg-warning" style="width: 18rem;">
+                    <img src="images/giratina.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title">Giratina</h5>
+                        <p class="card-text">There is one Hisuian verse that tells of a powerful light creating a deep shadow. I imagine that this deep shadow is Giratina.</p>
+                        <a target="_blank" href="https://www.serebii.net/pokedex-swsh/giratina/"
+                            class="btn btn-warning">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <!--Column 2 -->
+            <div class="col">
+                <!-- Card 2 -->
+                <div class="card bg-warning" style="width: 18rem;">
+                    <img src="images/suicune.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title">Suicune</h5>
+                        <p class="card-text">It was created by a scientist after years of horrific gene-splicing and DNA-engineering experiments.                        </p>
+                        <br>
+                        <a target="_blank" href="https://www.serebii.net/pokedex-bw/640.shtml"
+                            class="btn btn-warning">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <!--Column 3 -->
+            <div class="col">
+                <!-- Card 3 -->
+                <div class="card bg-warning" style="width: 18rem;">
+                    <img src="images/mewtwo.webp" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title">Virizion</h5>
+                        <p class="card-text">This Pokémon fought humans in order to protect its friends. Legends about
+                            it continue to be passed down.</p>
+                            
+                        <a target="_blank" href="https://www.serebii.net/pokedex-bw/640.shtml"
+                            class="btn btn-warning">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Container-->
+        <div class="container-fluid mt-5 mb-5">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Learn about legendaries!
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content opacity-100">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Legendary Pokemon</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--Image-->
+                    <img class="img-fluid mb-3" src="images/legendary.avif">
+                    <!--Modal Text-->
+                    Legendary Pokémon are rare, powerful Pokémon that are closely related to local lore surrounding the creation or destruction of a certain region. There is only one of each in the world, as opposed to the plentiful Pikachus that populate the Pokémon manga, games, and anime. Legendaries also can't evolve.
+                  </div>
+                  <div class="modal-footer">
+                    <!--Close button-->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
